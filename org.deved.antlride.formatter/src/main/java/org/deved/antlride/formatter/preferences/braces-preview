@@ -1,0 +1,30 @@
+grammar Braces;
+
+options {
+  language=Java;
+}
+
+tokens {
+  TOKEN;
+}
+
+scope GrammarScope {
+	String name;
+}
+
+@members {
+	int variable = 0;
+}
+
+braceRule
+options {
+    memoize=true;
+}
+scope {
+	String name;
+}
+@init {
+ int ruleVariable = variable;
+}
+    : 'braces'
+    ;

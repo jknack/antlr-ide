@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Creating your first grammar</title>
+<link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+</head>
+
+<body>
+<h1>Creating your first grammar</h1>
+<p>In this section, you will learn how to create a grammar with
+ANTLR IDE.
+<p>
+<h2>Creating the grammar</h2>
+<ol>
+	<li>Inside Eclipse select the menu item <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>ANTLR
+	IDE</strong>&gt;<strong>Composite Grammar</strong> to open the <strong>Combined
+	Grammar</strong> dialog wizard.</li>
+	<p><img alt="Creating your first grammar"
+		src="../../images/creatingyourfirstgrammar.png"></p>
+	<p><img alt="New ANTLR grammar wizard"
+		src="../../images/newcombinedgrammar.png"></p>
+	<li>In the <strong>Name</strong> field type Expr.</li>
+	<p><img alt="New ANTLR grammar wizard"
+		src="../../images/exprcombinedgrammar.png"></p>
+	<p>The ouput option: this option allow you to set the output option
+	for your grammar.</p>
+	<p>The language option: this option allow you to set the language
+	option for your grammar. You can choose one of the existing ones or
+	type a new one.</p>
+	<li>Click <strong>Finish</strong>.</li>
+	<li>The new grammar is opened with the ANTLR editor. It contains
+	the new grammar, the options region and an empty rule.</li>
+	<p><img alt="ANTLR IDE" src="../../images/expr.png"></p>
+	<p>The <strong>Outline view</strong> shows all the elements that
+	compose the Expr grammar.</p>
+	<p>The <strong>Console View</strong> shows general information
+	about the Expr grammar, for example the version of the ANTLR Parser
+	Generator used to process the Expr grammar. You can customize this
+	behavior in the <strong>Window > Preferences > ANTLR > Builder</strong>
+	preference pages.</p>
+	<li>Copy and paste the following code in Expr.g file</li>
+	<pre>
+grammar Expr;
+
+options {
+	language=Java;
+}
+
+@header {
+import java.util.HashMap;
+}
+
+@lexer::header {
+import java.util.HashMap;
+}
+
+@members {
+/** Map variable name to Integer object holding value */
+HashMap memory = new HashMap();
+}
+
+prog:   stat+ ;
+                
+stat:   expr NEWLINE {System.out.println($expr.value);}
+    |   ID '=' expr NEWLINE
+        {memory.put($ID.text, new Integer($expr.value));}
+    |   NEWLINE
+    ;
+
+expr returns [int value]
+    :   e=multExpr {$value = $e.value;}
+        (   '+' e=multExpr {$value += $e.value;}
+        |   '-' e=multExpr {$value -= $e.value;}
+        )*
+    ;
+
+multExpr returns [int value]
+    :   e=atom {$value = $e.value;} ('*' e=atom {$value *= $e.value;})*
+    ; 
+
+atom returns [int value]
+    :   INT {$value = Integer.parseInt($INT.text);}
+    |   ID
+        {
+        Integer v = (Integer)memory.get($ID.text);
+        if ( v!=null ) $value = v.intValue();
+        else System.err.println("undefined variable "+$ID.text);
+        }
+    |   '(' expr ')' {$value = $expr.value;}
+    ;
+
+ID  :   ('a'..'z'|'A'..'Z')+ ;
+INT :   '0'..'9'+ ;
+NEWLINE:'\r'? '\n' ;
+WS  :   (' '|'\t')+ {skip();} ;	
+	</pre>
+	<li>The Expr.g in the editor.The Syntax Coloring can be configured
+	in the <strong>Window > Preferences > ANTLR > Editor > Syntax
+	Coloring</strong> preference page.</li>
+	<p><img alt="ANTLR Editor" src="../../images/antlreditor.png" /></p>
+</ol>
+</body>
+</html>

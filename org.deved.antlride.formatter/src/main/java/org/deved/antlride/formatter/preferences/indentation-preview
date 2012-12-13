@@ -1,0 +1,30 @@
+grammar ANTLR;
+
+options {
+  output=AST;
+  ASTLabelType=CommonTree;
+}
+
+tokens {
+  DOC_COMMENT = 'doc';
+  PARSER = 'parser';
+}
+
+grammarDef
+options {
+    memoize=true;
+}
+    :   DOC_COMMENT?
+      ( 'lexer'  {gtype=LEXER_GRAMMAR;}    // pure lexer
+      |   'parser' {gtype=PARSER_GRAMMAR;}   // pure parser
+      )
+      g='grammar' id ';' 
+      rule+
+      EOF
+      -> ^( {adaptor.create(gtype,$g)}
+          id DOC_COMMENT? rule+
+        )
+    ;
+        
+ML_COMMENT: '/*' (options {greedy=false;} : .)* '*/' {$channel = HIDDEN;} ;
+

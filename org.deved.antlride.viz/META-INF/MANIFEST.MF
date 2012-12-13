@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ANTLR IDE Viz Plug-in
+Bundle-SymbolicName: org.deved.antlride.viz;singleton:=true
+Bundle-Version: 2.1.2.qualifier
+Bundle-Activator: org.deved.antlride.viz.AntlrViz
+Require-Bundle: org.deved.antlride.ui,
+ org.deved.antlride.clapham,
+ org.eclipse.ui,
+ org.eclipse.ui.forms,
+ org.eclipse.core.runtime,
+ org.deved.antlride.core,
+ org.eclipse.zest.core,
+ org.eclipse.zest.layouts,
+ org.deved.antlride.common.ui,
+ org.eclipse.dltk.core,
+ org.eclipse.dltk.ui,
+ org.eclipse.ui.editors,
+ org.eclipse.core.resources
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.deved.antlride.viz,
+ org.deved.antlride.viz.dfa,
+ org.deved.antlride.viz.railroad
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Edgar Espina

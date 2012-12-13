@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site associateSitesURL="http://antlrv3ide.sourceforge.net/updates/associateSites.xml">
+   <feature url="features/org.deved.antlride.feature.core_1.1.0.200810091822.jar" id="org.deved.antlride.feature.core" version="1.1.0.200810091822">
+      <category name="antlride"/>
+   </feature>
+   <feature url="features/org.deved.antlride.feature.integration.jdt_1.1.0.200810091822.jar" id="org.deved.antlride.feature.integration.jdt" version="1.1.0.200810091822">
+      <category name="antlride"/>
+   </feature>
+   <feature url="features/org.deved.antlride.feature.ui_1.1.0.200810091822.jar" id="org.deved.antlride.feature.ui" version="1.1.0.200810091822">
+      <category name="antlride"/>
+   </feature>
+   <category-def name="antlride" label="ANTLR IDE v1.1.0"/>
+</site>

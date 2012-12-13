@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Getting Started" link_to="toc.xml#gettingstarted"> 
+	<topic label="Basic Tutorial"  href="html/gettingstarted/basictutorial.html"> 
+		<topic label="Adding ANTLR Support to your project" href="html/gettingstarted/basictutorial/addingantlrsupport.html" />
+  <topic href="html/gettingstarted/basictutorial/creatingyourfirstgrammar.html" label="Creating your first grammar">
+  </topic>
+  <topic href="html/gettingstarted/basictutorial/editingantlrgrammars.html" label="Editing ANTLR grammars">
+     <topic href="html/gettingstarted/basictutorial/editingantlrgrammars/openingantlreditor.html" label="Opening a ANTLR editor">
+     </topic>
+     <topic href="html/gettingstarted/basictutorial/editingantlrgrammars/usingcontentassist.html" label="Using content assist">
+     </topic>
+     <topic href="html/gettingstarted/basictutorial/editingantlrgrammars/identifyingproblems.html" label="Identifying problems in your grammar">
+     </topic>
+     <topic href="html/gettingstarted/basictutorial/editingantlrgrammars/usingruletemplates.html" label="Using rule templates">
+     </topic>
+  </topic>
+  <topic href="html/gettingstarted/basictutorial/builderoptions.html" label="ANTLR Builder options">
+  </topic>
+  <topic href="html/gettingstarted/basictutorial/usingthecodegenerator.html" label="Using the code generator">
+     <topic href="html/gettingstarted/basictutorial/usingthecodegenerator/generatingcode.html" label="Generating code">
+     </topic>
+     <topic href="html/gettingstarted/basictutorial/usingthecodegenerator/codegeneratoroptions.html" label="Code generator options">
+     </topic>
+  </topic>
+  <topic href="html/gettingstarted/basictutorial/usingtheantlrbuiltininterpreter.html" label="Using the ANTLR built-in interpreter">
+     <topic href="html/gettingstarted/basictutorial/usingtheantlrbuiltininterpreter/evaluatingrules.html" label="Evaluating Rules">
+     </topic>
+     <topic href="html/gettingstarted/basictutorial/usingtheantlrbuiltininterpreter/savingtestcases.html" label="Saving test cases">
+     </topic>
+  </topic>
+  <topic href="html/gettingstarted/basictutorial/runningantlrgrammars.html" label="Running your grammar">
+  </topic> 
+  <topic href="html/gettingstarted/basictutorial/debuggingantlrgrammars.html" label="Debugging your grammar">
+  </topic>
+	</topic>
+ <topic href="html/gettingstarted/grammarreuse.html" label="Grammar Reuse">
+    <topic href="html/gettingstarted/grammarreuse/lexerparsergrammars.html" label="Lexer and Parser grammars">
+    </topic>
+    <topic href="html/gettingstarted/grammarreuse/combinedgrammars.html" label="Combined Grammars">
+    </topic>
+ </topic>
+ <topic href="html/gettingstarted/decisiondfa.html" label="Decision Points">
+ </topic>
+</toc>

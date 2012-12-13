@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+	<extension point="org.eclipse.dltk.ui.formatterFactory">
+		<engineContribution natureId="org.deved.antlride.core.nature">
+			<formatterFactory
+				class="org.deved.antlride.formatter.AntlrFormatterFactory"
+         		id="org.deved.antlride.formatter.AntlrFormatterFactory"
+         		priority="10"
+         		name="ANTLR Formatter"
+         		description="">
+			</formatterFactory>
+		</engineContribution>
+	</extension>
+	
+	<extension point="org.eclipse.core.runtime.preferences">
+		<initializer
+			class="org.deved.antlride.formatter.internal.AntlrFormatterPreferenceInitializer">
+		</initializer>
+	</extension>
+</plugin>

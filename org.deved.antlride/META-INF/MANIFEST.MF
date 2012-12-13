@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ANTLR IDE
+Bundle-SymbolicName: org.deved.antlride; singleton:=true
+Bundle-Version: 2.1.2.qualifier
+Bundle-Activator: org.deved.antlride.IDE
+Bundle-Vendor: Edgar Espina
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.core.filesystem,
+ org.deved.antlride.core,
+ org.deved.antlride.ui,
+ org.eclipse.dltk.core,
+ org.eclipse.dltk.ui,
+ org.eclipse.ui.ide,
+ org.eclipse.ui,
+ org.eclipse.ui.intro,
+ org.eclipse.ui.forms,
+ org.eclipse.ui.views,
+ org.eclipse.swt
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy

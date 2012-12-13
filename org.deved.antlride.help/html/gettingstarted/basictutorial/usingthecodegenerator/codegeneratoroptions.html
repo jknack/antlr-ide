@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Code generator options</title>
+<link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+</head>
+
+<body>
+<h1>Code generator options</h1>
+<p>In this section, you will learn more about the code generator.</p>
+<p><strong>Note</strong>: the *.tokens files is always generated in
+the same location where the grammar file.</p>
+<ol>
+	<li>The code generator options are available at three different points:
+	<p><strong>Window > Preferences > ANTLR > Code Generator</strong>
+	preferences page</p>
+	<p><strong>Project > Properties > ANTLR > Code Generator</strong> project
+	preferences page</p>
+	<p><strong>Grammar > Properties > ANTLR Code Generator</strong> grammar
+	preferences page</p>
+	</li>
+	<p><img alt="Code Generator"
+		src="../../../images/codegeneratoroptions.png"></p>
+	<li>The <strong>Output Folder</strong> option: This option
+	represent the -o option of ANTLR.</li>
+	<p>The <strong>Same as grammar</strong> option put the generated
+	files in the same location where your grammar is. After the code
+	generation ANTLR IDE will refresh the project to see the generated
+	resources. This is the default option.</p>
+	<p>The <strong>Project relative folder</strong> option put the
+	generated files in a location relative to the project location. After
+	the code generation ANTLR IDE will refresh the project to see the
+	generated resources.</p>
+	<p>The <strong>Absolute folder</strong> option put the generated
+	files in a location relative to the project location.</p>
+	<li>The rest of options are ANTLR options, you can find more
+	information <a
+		href="http://www.antlr.org/wiki/display/ANTLR3/Command+line+options">here</a>.</li>
+</ol>
+<h1>Code generator examples</h1>
+<h2>Example 1: Putting all in the same folder.</h2>
+<pre>
+--myproject
+----folder1
+------G1.g
+------G2.g
+----folder2
+------G3.g
+</pre>
+<p>Saving each one you will get:</p>
+<pre>
+--myproject
+----folder1
+------G1.g
+------G1Lexer.java
+------G1Parser.java
+------G2.g
+------G2Lexer.java
+------G2Parser.java
+----folder2
+------G3.g
+------G3Lexer.java
+------G3Parser.java
+</pre>
+<h2>Example 2: Putting the grammar in one location and generating
+the resources in another location.</h2>
+<p>Set the <strong>Project relative folder</strong> field to "src".</p>
+<pre>
+--myproject
+----src
+----folder1
+------G1.g
+</pre>
+<p>Saving G1.g you will get:</p>
+<pre>
+--myproject
+----src
+------G1Lexer.java
+------G1Parser.java
+----folder1
+------G1.g
+</pre>
+<p>Suppose that G1.g is a Java grammar and has a:</p>
+<pre>
+@header {
+ package mypackage.mysubpackage.myparser;
+}
+</pre>
+directive. If you want that ANTLR IDE scan these directive to generate
+the resources in the corresponding folder, you need to check the
+<strong>"Append java package to the output folder"</strong>
+option. If you do that, you get this:
+<pre>
+--myproject
+----src
+------mypackage
+--------mysubpackage
+----------myparser
+------------G1Lexer.java
+------------G1Parser.java
+----folder1
+------G1.g
+</pre>
+</body>
+</html>

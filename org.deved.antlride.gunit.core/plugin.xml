@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         id="org.deved.antlride.gunit.nature"
+         name="%stNature"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="org.deved.antlride.gunit.core.GUnitNature">
+         </run>
+      </runtime>
+   </extension>
+   <extension
+         point="org.eclipse.dltk.core.language">
+      <language
+            class="org.deved.antlride.gunit.core.GUnitLanguageToolkit"
+            nature="org.deved.antlride.gunit.nature"
+            priority="0">
+      </language>
+   </extension>
+   <extension
+         point="org.eclipse.dltk.core.sourceParsers">
+      <parserContribution
+            natureId="org.deved.antlride.gunit.nature">
+         <parser
+               class="org.deved.antlride.gunit.core.parser.GUnitSourceParserFactory"
+               description="GUnit Source Parser Factory"
+               id="org.deved.antlride.gunit.core.gUnitSPF"
+               name="gUnitSPF"
+               priority="0">
+         </parser>
+      </parserContribution>
+   </extension>
+   <extension
+         point="org.eclipse.dltk.core.sourceElementParsers">
+      <parser
+            class="org.deved.antlride.gunit.core.parser.GUnitSourceElementParser"
+            nature="org.deved.antlride.gunit.nature">
+      </parser>
+   </extension>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+      <content-type
+            base-type="org.eclipse.core.runtime.text"
+            describer="org.deved.antlride.gunit.internal.core.GUnitContentDescriber"
+            file-extensions="gunit,testsuite"
+            id="org.deved.antlride.gunit.contentType"
+            name="%guContentType"
+            priority="high">
+      </content-type>
+   </extension>
+
+</plugin>

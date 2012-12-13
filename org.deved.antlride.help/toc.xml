@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="ANTLR IDE user guide" topic="html/toc.html">
+   <topic href="html/gettingstarted.html" label="Getting Started">
+      <anchor id="gettingstarted"/>
+   </topic>
+   <!--<topic label="Concepts">
+      <anchor id="concepts"/>
+   </topic>
+   <topic label="Tasks">
+      <anchor id="tasks"/>
+   </topic>-->
+   <topic href="http://www.antlr.org/wiki/display/ANTLR3/ANTLR+3+Wiki+Home" label="ANTLR Documentation">
+   </topic>
+   <topic href="html/migrating.html" label="Migrating from 1.3.1">
+   </topic>
+   <!--<topic label="Samples">
+      <anchor id="samples"/>
+   </topic>-->
+</toc>

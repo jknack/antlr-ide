@@ -1,0 +1,17 @@
+grammar ControlStatement;
+
+public
+rule[Arg arg] returns[int x, y] throws SomeException
+    : 'rule' a '[' ']' EMPTY
+      -> ^(RULE a ^(SUBTREE EMPTY)
+          )
+    ;
+
+a: 'a';
+
+EMPTY:;
+
+fragment
+DIGIT:
+  '0'..'9'	
+ ;    

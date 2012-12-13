@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ANTLR IDE- Common UI Plug-in
+Bundle-SymbolicName: org.deved.antlride.common.ui;singleton:=true
+Bundle-Version: 2.1.2.qualifier
+Bundle-Activator: org.deved.antlride.common.ui.AntlrCommonUI
+Require-Bundle: org.deved.antlride.antlr,
+ org.eclipse.dltk.core,
+ org.eclipse.dltk.ui,
+ org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text,
+ org.eclipse.ui.editors,
+ org.eclipse.core.resources
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: Edgar Espina
+Export-Package: org.deved.antlride.common.ui,
+ org.deved.antlride.common.ui.text,
+ org.deved.antlride.common.ui.text.editor,
+ org.deved.antlride.common.ui.text.folding,
+ org.deved.antlride.common.ui.text.highlighting,
+ org.deved.antlride.common.ui.text.highlighting.rules,
+ org.deved.antlride.common.ui.text.partitions,
+ org.deved.antlride.common.ui.text.partitions.rules,
+ org.deved.antlride.common.ui.text.rules

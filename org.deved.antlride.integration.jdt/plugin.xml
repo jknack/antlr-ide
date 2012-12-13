@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.debug.core.sourceLocators">
+      <sourceLocator
+            class="org.deved.antlride.internal.jdt.sourcelookup.AntlrJavaSourceLookupDirector"
+            id="org.deved.antlride.jdt.sourceLocator"
+            name="%AntlrJavaSourceLocator.name">
+      </sourceLocator>
+   </extension>
+   <extension
+         point="org.eclipse.debug.core.sourcePathComputers">
+      <sourcePathComputer
+            class="org.deved.antlride.internal.jdt.sourcelookup.AntlrJavaSourcePathComputer"
+            id="org.deved.antlride.jdt.sourcePathComputer">
+      </sourcePathComputer>
+   </extension>
+   <extension
+         point="org.deved.antlride.core.languageTarget">
+      <languageTarget
+            class="org.deved.antlride.integration.jdt.AntlrJavaTargetService"
+            id="javaTargetService">
+      </languageTarget>
+   </extension>
+   <!--
+   <extension
+         point="org.eclipse.jdt.core.compilationParticipant">
+      <compilationParticipant
+            class="org.deved.antlride.internal.jdt.compiler.AntlrJavaCompilationParticipant"
+            createsProblems="false"
+            id="org.deved.antlride.integration.jdt.compilationParticipant1"
+            modifiesEnvironment="false"
+            requiredSourceLevel="1.5">
+      </compilationParticipant>
+   </extension> -->   
+ 
+</plugin>

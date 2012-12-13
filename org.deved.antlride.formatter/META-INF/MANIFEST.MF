@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ANTLR IDE- Source Formatter
+Bundle-SymbolicName: org.deved.antlride.formatter;singleton:=true
+Bundle-Version: 2.1.2.qualifier
+Bundle-Activator: org.deved.antlride.formatter.AntlrFormatterPlugin
+Bundle-Vendor: Edgar Espina
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.dltk.core;bundle-version="1.0.0",
+ org.eclipse.dltk.formatter;bundle-version="1.0.0",
+ org.eclipse.dltk.ui;bundle-version="1.0.0",
+ org.deved.antlride.core;bundle-version="2.0.0",
+ org.deved.antlride.ui;bundle-version="2.0.0",
+ org.eclipse.jface.text;bundle-version="3.3.0",
+ org.eclipse.ui.editors;bundle-version="3.3.0",
+ org.eclipse.core.resources;bundle-version="3.3.0"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy

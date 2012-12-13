@@ -1,0 +1,8 @@
+<project>
+	<target name="jar">
+		<jar destfile="target/antlride-runtime.jar">
+			<fileset dir="target/classes">
+			</fileset>
+		</jar>
+	</target>
+</project>

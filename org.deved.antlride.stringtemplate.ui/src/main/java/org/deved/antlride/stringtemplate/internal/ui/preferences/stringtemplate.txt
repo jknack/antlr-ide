@@ -1,0 +1,43 @@
+/* Template subgroup to add template rewrite output
+ *  If debugging, then you'll also get STDbg.stg loaded.
+ */
+group ST;
+
+/** Add this to each rule's return value struct */
+@returnScope.ruleReturnMembers() ::= <<
+<@super.ruleReturnMembers()>
+public StringTemplate st;
+public Object getTemplate() { return st; }
+public String toString() { return st==null?null:st.toString(); }
+>>
+
+/** x+=rule when output=template */
+ruleRefAndListLabel(rule,label,elementIndex,args) ::= <<
+<ruleRef(...)>
+<listLabel(elem=label+".getTemplate()",...)>
+>>
+
+rewriteTemplateAlt() ::= <<
+<! <it.description> !>
+<if(it.pred)>
+if (<it.pred>) {
+    retval.st = <it.alt>;
+}<\n>
+<else>
+{
+    retval.st = <it.alt>;
+}<\n>
+<endif>
+>>
+
+/** Invoke an inline template with a set of attribute name/value pairs */
+rewriteInlineTemplate(args, template) ::= <<
+new StringTemplate(templateLib, "<template>"<if(args)>,
+  new STAttrMap()<args:{a | .put("<a.name>", <a.value>)}>
+  <endif>)
+>>
+
+/** Translate %{stringExpr} */
+actionStringConstructor(stringExpr) ::= <<
+new StringTemplate(templateLib,<stringExpr>)
+>>

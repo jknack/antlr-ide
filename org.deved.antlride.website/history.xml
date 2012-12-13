@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content>
+	<news>
+		<topic>ANTLRv3 IDE-1.0.0-beta5</topic>
+		<topicDate>04.07.2008</topicDate>
+		<topicMessage><![CDATA[<span>New Features</span>:<br/>
+		<ul class="list">
+		 <li>1930777- Accept .g as the grammar file extension</li>
+		 <li>1929683- Support ANTLR 3.1</li>		 
+		 </ul><br/>
+		 <span>Bugs Fixed</span>:
+		 <ul class="list">
+		 <li>1931480- NullPointer Exception due to generics</li>
+		 <li>1896086- Missing Grammar name validation</li>
+		 </ul>
+		 <span>Changes</span>:
+		 <ul class="list">
+		 	<li>File extension *.g3 is no longer supported</li>
+		 </ul>
+		 ]]></topicMessage>
+		<download><![CDATA[https://sourceforge.net/project/showfiles.php?group_id=213306]]></download>
+	</news>
+	<news>
+		<topic>ANTLRv3 IDE now is licensed under EPL</topic>
+		<topicDate>03.17.2008</topicDate>
+		<topicMessage></topicMessage>
+		<download></download>
+	</news>
+	<news>
+		<topic>ANTLRv3 IDE-1.0.0-beta4 release!!!</topic>
+		<topicDate>01.04.2008</topicDate>
+		<topicMessage><![CDATA[First release available for download. Enjoy it]]></topicMessage>
+		<download><![CDATA[https://sourceforge.net/project/showfiles.php?group_id=213306]]></download>
+	</news>
+</content>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.deved.antlride.feature.stringtemplate"
+      label="%featureName"
+      version="1.1.0.qualifier"
+      provider-name="%providerName">
+
+   <description url="http://antlrv3ide.sourceforge.net/updates/">
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="%updateSiteName" url="http://antlrv3ide.sourceforge.net/updates/"/>
+      <discovery label="%updateSiteName" url="http://antlrv3ide.sourceforge.net/updates"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.dltk.core" version="3.0.0" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="org.deved.antlride.stringtemplate.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.deved.antlride.stringtemplate.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

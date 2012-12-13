@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+    <extension
+         point="org.deved.antlride.ui.editorPageContribution">
+      <pageContribution
+            class="org.deved.antlride.viz.railroad.RailRoadPageContribution">
+      </pageContribution>
+   </extension>
+   <extension
+         point="org.deved.antlride.ui.editorPageContribution">
+      <pageContribution
+            class="org.deved.antlride.viz.dfa.AntlrDFAPageContribution">
+      </pageContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="org.deved.antlride.internal.viz.preferences.AntlrVizPreferencePage"
+            id="org.deved.antlride.ui.preferences.viz"
+            category="org.deved.antlride.ui.preferences"
+            name="Visualization">
+      </page>
+   </extension>
+</plugin>

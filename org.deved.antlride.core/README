@@ -1,0 +1,21 @@
+SourceForge:
+web:
+server:web.sourceforge.net
+path:>/home/groups/a/an/antlrv3ide/htdocs/
+
+file release
+server:frs.sourceforge.net
+path:/home/pfs/project/a/an/antlrv3ide/
+cmd:
+$ sftp devx_edg,antlrv3ide@frs.sourceforge.net
+sftp> cd /home/pfs/project/a/an/antlrv3ide/
+sftp> put file
+
+
+mylyn:
+group_id     : 213306
+bugs     atid: 1025202
+features atid: 1025205
+
+Query URL: ${serverUrl}/tracker/?func=browse&group_id=${group_id}&atid=${atid}
+QueryPattern: <a href="/tracker/\?func=detail&aid=(.+?)&group_id=${group_id}&atid=${atid}">(.+?)</a>

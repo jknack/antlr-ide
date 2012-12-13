@@ -1,0 +1,73 @@
+<project>
+	<property name="eclipse.home.win" value="c:\eclipse\eclipse.exe"/>
+	<property name="eclipse.home.linux" value="/home/edgar/eclipse/eclipse"/>
+	<property name="eclipse.exe" value="${eclipse.home.linux}"/>
+	<target name="after-buildAll">
+		<unjar src="updates/artifacts.jar" dest="updates" />
+		<unjar src="updates/content.jar" dest="updates" />
+		<delete file="updates/artifacts.jar" />
+		<delete file="updates/content.jar" />
+
+		<antcall target="p2-category" />
+	</target>
+
+	<target name="p2">
+		<property name="updateSite" value="updates" />
+		<exec executable="${eclipse.exe}" dir="${basedir}">
+			<arg value="-console" />
+			<arg value="-consolelog" />
+			<arg value="-application" />
+			<arg value="org.eclipse.equinox.p2.metadata.generator.EclipseGenerator" />
+			<arg value="-updateSite" />
+			<arg value="${updateSite}" />
+			<arg value="-site" />
+			<arg value="${updateSite}/site.xml" />
+			<arg value="-metadataRepository" />
+			<arg value="${updateSite}" />
+			<arg value="-metadataRepositoryName" />
+			<arg value="ANTLR IDE Update site" />
+			<arg value="-artifactRepository" />
+			<arg value="${updateSite}" />
+			<arg value="-artifactRepositoryName" />
+			<arg value="ANTLR IDE Artifacts" />
+			<arg value="-compress" />
+			<arg value="-reusePack200Files" />
+			<arg value="-noDefaultIUs" />
+			<arg value="-vmargs" />
+			<arg value="-Xmx256m" />
+		</exec>
+	</target>
+
+	<target name="p2-publisher">
+		<property name="updateSite" value="${basedir}/updates" />
+		<exec executable="${eclipse.exe}" dir="${basedir}">
+			<arg value="-console" />
+			<arg value="-consolelog" />
+			<arg value="-application" />
+			<arg value="org.eclipse.equinox.p2.publisher.UpdateSitePublisher" />
+			<arg value="-metadataRepository" />
+			<arg value="file:/${updateSite}" />
+			<arg value="-artifactRepository" />
+			<arg value="file:/${updateSite}" />
+			<arg value="-source" />
+			<arg value="${updateSite}" />
+			<arg value="-compress" />
+			<arg value="-publishArtifacts" />
+		</exec>
+	</target>
+
+	<target name="p2-category">
+		<property name="updateSite" value="file:${basedir}/updates" />
+		<exec executable="${eclipse.exe}" dir="${basedir}">
+			<arg value="-console" />
+			<arg value="-consolelog" />
+			<arg value="-application" />
+			<arg value="org.eclipse.equinox.p2.publisher.CategoryPublisher" />
+			<arg value="-metadataRepository" />
+			<arg value="${updateSite}" />
+			<arg value="-categoryDefinition" />
+			<arg value="${updateSite}/category.xml" />
+			<arg value="-categoryQualifier" />
+		</exec>
+	</target>
+</project>

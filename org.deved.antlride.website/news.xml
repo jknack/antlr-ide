@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content>
+    <news>
+		<topic>ANTLR IDE 2.1.2</topic>
+		<topicDate>08.29.2011</topicDate>
+		<topicMessage><![CDATA[
+		<span>New Features</span>:<br/>
+		<ul class="list">
+		 <li>ANTLR 3.4 Support</li>
+		 <li>Indigo Release</li>
+		 </ul>		
+		 <br/>
+		 ]]></topicMessage>
+		<download><![CDATA[https://sourceforge.net/project/showfiles.php?group_id=213306]]></download>
+	</news>
+    <news>
+		<topic>ANTLR IDE 2.1.1</topic>
+		<topicDate>11.14.2010</topicDate>
+		<topicMessage><![CDATA[
+		<span>Bugs</span>:<br/>
+		<ul class="list">
+		 <li><a href="https://sourceforge.net/tracker/index.php?func=detail&aid=3021594&group_id=213306&atid=1025202">Problem with Run (Java) with parser grammar</li>
+		 </ul>		
+		 <br/>
+		 ]]></topicMessage>
+		<download><![CDATA[https://sourceforge.net/project/showfiles.php?group_id=213306]]></download>
+	</news>
+    <news>
+		<topic>ANTLR IDE 2.1.0</topic>
+		<topicDate>09.26.2010</topicDate>
+		<topicMessage><![CDATA[
+		<span>Bugs</span>:<br/>
+		<ul class="list">
+		 <li><a href="http://sourceforge.net/tracker/index.php?func=detail&aid=3054247&group_id=213306&atid=1025202">Error building //xxxx.g</a></li>
+		 <li><a href="http://sourceforge.net/tracker/index.php?func=detail&aid=3035339&group_id=213306&atid=1025202">NPE during resource deltas processing</a></li>
+		 </ul>		
+		 <br/>
+		 ]]></topicMessage>
+		<download><![CDATA[https://sourceforge.net/project/showfiles.php?group_id=213306]]></download>
+	</news>
+	<news>
+		<topic>ANTLR IDE 2.1.0-rc1</topic>
+		<topicDate>05.31.2010</topicDate>
+		<topicMessage><![CDATA[
+		<span>Changes</span>:<br/>
+		<ul class="list">
+			<li>The popmenu: "ANTLR IDE/Add ANTLR Support" now is "Configure/Convert to ANTLR Project..."</li>
+		</ul>
+		<span>New Features</span>:<br/>
+		<ul class="list">
+			<li><a href="https://sourceforge.net/tracker/?func=detail&aid=2895476&group_id=213306&atid=1025205">Support for eclipse 3.6</a></li>
+		</ul>
+		<span>Bugs</span>:<br/>
+		<ul class="list">
+		 <li><a href="http://sourceforge.net/tracker/?func=detail&aid=2987691&group_id=213306&atid=1025202">Formatter destroys '{{'</a></li>
+		 <li><a href="https://sourceforge.net/tracker/index.php?func=detail&aid=3009028&group_id=213306&atid=1025202">Editor can't be initialized with eclipse 3.6</a></li>
+		 <li><a href="https://sourceforge.net/tracker/index.php?func=detail&aid=3009030&group_id=213306&atid=1025202">Only Antlr tools can be installed</a></li>
+		 <li><a href="https://sourceforge.net/tracker/index.php?func=detail&aid=2994517&group_id=213306&atid=1025202">An exception stack trace is not available.</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2983726&group_id=213306&atid=1025202">"Configure" menu shall be used for adding nature</a></li>
+		 </ul>		
+		 <br/>
+		 ]]></topicMessage>
+		<download><![CDATA[https://sourceforge.net/project/showfiles.php?group_id=213306]]></download>
+	</news>
+	<news>
+		<topic>ANTLR IDE 2.0.2</topic>
+		<topicDate>04.12.2010</topicDate>
+		<topicMessage><![CDATA[
+		<span>Bugs</span>:<br/>
+		<ul class="list">
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2985632&group_id=213306&atid=1025202">Interpreter fails with some grammar ambiguities</a></li>
+		 <li><a href="https://sourceforge.net/tracker/index.php?func=detail&aid=2980569&group_id=213306&atid=1025202">Complex dependencies may impede generating a parser</a></li>
+		 </ul>		
+		 <br/>
+		 ]]></topicMessage>
+		<download><![CDATA[https://sourceforge.net/project/showfiles.php?group_id=213306]]></download>
+	</news>
+	<news>
+		<topic>ANTLR IDE 2.0.1</topic>
+		<topicDate>03.18.2010</topicDate>
+		<topicMessage><![CDATA[<span>New Features</span>:<br/>
+		<ul class="list">
+		<li>Railroad Diagrams. A new way of visualize iteration node</li>
+		<li>Railroad Diagrams. A way of enqueue graph</li>
+		<li>Railroad Diagrams. Predicates displayed as labels</li>
+		<li>Railroad Diagrams. The any character(.) is displayed properly</li>
+		<li><a href="https://sourceforge.net/tracker/?func=detail&aid=2895476&group_id=213306&atid=1025205">Support for eclipse 3.6</a></li>
+		 </ul>		
+		 <br/>
+		 </ul>
+		<span>Bugs</span>:<br/>
+		<ul class="list">
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2957355&group_id=213306&atid=1025202">Rail Road Export to HMTL not showing images</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2957285&group_id=213306&atid=1025202">Formatter deletes input on encountering syntax error</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2957281&group_id=213306&atid=1025202">Formatter deletes heterogeneous tree nodes constructs</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2887147&group_id=213306&atid=1025202">Formatter eats grammar with StringTemplate actions</a></li>
+		 </ul>		
+		 <br/>
+		 ]]></topicMessage>
+		<download><![CDATA[https://sourceforge.net/project/showfiles.php?group_id=213306]]></download>
+	</news>
+	<news>
+		<topic>ANTLR IDE 2.0.0</topic>
+		<topicDate>02.22.2010</topicDate>
+		<topicMessage><![CDATA[<span>New Features</span>:<br/>
+		<ul class="list">
+		<li>Railroad Diagrams</li>
+		<li><a href="https://sourceforge.net/tracker/?func=detail&aid=2946461&group_id=213306&atid=1025205">Export an image of the matching tree</a></li>
+		 </ul>		
+		 <br/>
+		 </ul>
+		<span>Bugs</span>:<br/>
+		<ul class="list">
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2893806&group_id=213306&atid=1025202">Quotes are auto-closed even with setting turned off</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2905975&group_id=213306&atid=1025202">grammars with dependencies may not be build in correct order</a></li>
+		 </ul>		
+		 <br/>
+		 ]]></topicMessage>
+		<download><![CDATA[https://sourceforge.net/project/showfiles.php?group_id=213306]]></download>
+	</news>
+	<news>
+		<topic>ANTLR IDE 2.0.0-rc4</topic>
+		<topicDate>10.19.2009</topicDate>
+		<topicMessage><![CDATA[<span>New Features</span>:<br/>
+		<ul class="list">
+		<li><a href="https://sourceforge.net/tracker/?func=detail&aid=2268721&group_id=213306&atid=1025205">Add source formatting</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2865370&group_id=213306&atid=1025205">Support ANTLR 3.2</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2839955&group_id=213306&atid=1025205">Increase max value of the -Xmx option</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2839580&group_id=213306&atid=1025205">Adding package to output path for custom targets</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2831502&group_id=213306&atid=1025205">More useful custom targets...</a></li>		 
+		 <li><a href="https://sourceforge.net/tracker/index.php?func=detail&aid=2111725&group_id=213306&atid=1025205">Default text on dark background</a></li>
+		 </ul>		
+		 <br/>
+		 </ul>
+		<span>Bugs</span>:<br/>
+		<ul class="list">
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2854612&group_id=213306&atid=1025202">Problems with filenames containing whitespace</a></li>
+		 </ul>		
+		 <br/>
+		 ]]></topicMessage>
+		<download><![CDATA[https://sourceforge.net/project/showfiles.php?group_id=213306]]></download>
+	</news>
+	<news>
+		<topic>ANTLR IDE 2.0.0-rc3</topic>
+		<topicDate>07.21.2009</topicDate>
+		<topicMessage><![CDATA[<span>Bugs</span>:<br/>
+		<ul class="list">
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2822393&group_id=213306&atid=1025202">gUnit Editor hangs on save with backslashes</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2817221&group_id=213306&atid=1025202">Unclosed string literals hang-up gUnit editor/eclipse</a></li>
+		 </ul>		
+		 <br/>
+		 ]]></topicMessage>
+		<download><![CDATA[https://sourceforge.net/project/showfiles.php?group_id=213306]]></download>
+	</news>
+	<news>
+		<topic>ANTLR IDE 2.0.0-rc2</topic>
+		<topicDate>06.29.2009</topicDate>
+		<topicMessage><![CDATA[<span>Bugs</span>:<br/>
+		<ul class="list">
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2812671&group_id=213306&atid=1025202">Outline broked</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2811631&group_id=213306&atid=1025202">gUnit editor/eclipse hangs</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2741821&group_id=213306&atid=1025202">Invalid outline in ST editor</a></li>
+		 </ul>		
+		 <br/>
+		 ]]></topicMessage>
+		<download><![CDATA[https://sourceforge.net/project/showfiles.php?group_id=213306]]></download>
+	</news>
+	<news>
+		<topic>ANTLR IDE 2.0.0-rc1</topic>
+		<topicDate>06.15.2009</topicDate>
+		<topicMessage><![CDATA[<span>New Features</span>:<br/>
+		<ul class="list">
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2806929&group_id=213306&atid=1025205">Decision Points (DFAs)</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2806928&group_id=213306&atid=1025205">Improve the user interface</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2806927&group_id=213306&atid=1025205">Improve the error reporting mechanism</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2806925&group_id=213306&atid=1025205">ANTLR packages</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2806908&group_id=213306&atid=1025205">Multiple projects handle and the -lib option</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2781386&group_id=213306&atid=1025205">Upgrade to DLTK 1.0.0</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2706189&group_id=213306&atid=1025205">Custom targets</a></li>
+		 <li><a href="https://sourceforge.net/tracker/?func=detail&aid=2268603&group_id=213306&atid=1025205">Easier interface to errors/warnings</a></li>
+		 </ul>		
+		 <br/>
+		 </ul>
+		 ]]></topicMessage>
+		<download><![CDATA[https://sourceforge.net/project/showfiles.php?group_id=213306]]></download>
+	</news>
+</content>

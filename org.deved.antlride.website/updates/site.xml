@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site
+      associateSitesURL="http://antlrv3ide.sourceforge.net/updates/associateSites.xml">
+   <feature url="features/org.deved.antlride.feature_2.1.2.201108281759.jar" id="org.deved.antlride.feature" version="2.1.2.201108281759">
+      <category name="antlride"/>
+   </feature>
+   <feature url="features/org.deved.antlride.feature.gunit_1.1.0.201108281759.jar" id="org.deved.antlride.feature.gunit" version="1.1.0.201108281759">
+      <category name="antlride"/>
+   </feature>
+   <feature url="features/org.deved.antlride.feature.integration.jdt_2.1.2.201108281759.jar" id="org.deved.antlride.feature.integration.jdt" version="2.1.2.201108281759">
+      <category name="antlride"/>
+   </feature>
+   <feature url="features/org.deved.antlride.feature.stringtemplate_1.1.0.201108281759.jar" id="org.deved.antlride.feature.stringtemplate" version="1.1.0.201108281759">
+      <category name="antlride"/>
+   </feature>
+   <feature url="features/org.deved.antlride.feature.viz_2.1.2.201108281759.jar" id="org.deved.antlride.feature.viz" version="2.1.2.201108281759">
+      <category name="antlride"/>
+   </feature>
+   <category-def name="antlride" label="ANTLR IDE v2.1.2">
+      <description>
+         Indigo Release. ANTLR 3.4 Support
+      </description>
+   </category-def>
+</site>

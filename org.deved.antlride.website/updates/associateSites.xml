@@ -1,0 +1,8 @@
+<associateSites>
+	<associateSite
+		url="http://download.eclipse.org/technology/dltk/updates-dev/1.0"
+		label="Dynamic Languages Toolkit (DLTK)" />
+
+	<associateSite
+		url="http://download.eclipse.org/tools/gef/updates/releases/" label="Graphical Editing Framework (GEF)" />
+</associateSites>

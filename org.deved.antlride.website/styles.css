@@ -1,0 +1,147 @@
+/*
+ * Ext JS Library 2.0.2
+ * Copyright(c) 2006-2008, Ext JS, LLC.
+ * licensing@extjs.com
+ * 
+ * http://extjs.com/license
+ */
+
+body {
+	font-family: sans-serif;
+	font-size: 12px;
+	margin-left: 20px;
+    padding-top:10px;
+	background-color:#4F6269 !important;
+}
+a:link {
+	color: #4F6269;
+	text-decoration: underline;
+}
+a:hover {
+	color: #4F6269;
+	text-decoration: underline;	
+}
+a:active {
+	color: #4F6269;
+	text-decoration: underline;
+}
+a:visited {
+	color: #4F6269;
+	text-decoration: underline;
+}
+p {
+	margin-bottom:15px;
+}
+h1 {
+	font-size:large;
+	margin-bottom:20px;
+	color:#FFFFFF;
+}
+h2 {
+	font-size:12px;
+    color:#FFFFFF;
+    font-weight:bold;
+    margin:10px 0;	
+}
+
+span {
+	color: #15428b;
+	font:bold 11px verdana,tahoma,helvetica;
+}
+
+pre.code{
+	background: #F8F8F8;
+	border: 1px solid #e8e8e8;
+	padding:10px;
+	margin:10px;
+	margin-left:0px;
+	border-left:5px solid #e8e8e8;
+	font-size: 12px !important;
+	line-height:14px !important;
+}
+.x-grid3-row-body p {
+    margin:5px 5px 10px 5px !important;
+}
+
+.list {list-style:square;width:800px;padding-left:16px;}
+.list li{padding:2px;font-size:8pt; margin-left: 10px;}
+
+pre {
+   font-size:11px; 
+}
+
+.x-tab-panel-body .x-panel-body {
+    padding:10px;
+}
+
+/* default loading indicator for ajax calls */
+.loading-indicator {
+	font-size:8pt;
+	background-image:url('jsext/resources/images/default/grid/loading.gif');
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left:20px;
+}
+
+.new-tab {
+    background-image:url(../feed-viewer/images/new_tab.gif) !important;
+}
+
+
+.tabs {
+    background-image:url( ../desktop/images/tabs.gif ) !important;
+}
+
+#grid-example .x-grid-col-1 {
+	text-align: right;
+}
+#grid-example .x-grid-col-2{
+	text-align: right;
+}
+#grid-example .x-grid-col-3 {
+	text-align: right;
+}
+#grid-example .x-grid-col-4 {
+	text-align: right;
+}
+#grid-example.x-grid-mso{
+	border: 1px solid #6593cf;
+}
+#grid-example.x-grid-vista{
+	border: 1px solid #b3bcc0;
+}
+.x-grid3-td-topic b {
+    font-family:tahoma, verdana;
+    display:block;
+}
+.x-grid3-td-topic b i {
+    font-weight:normal;
+    font-style: normal;
+    color:#000;
+}
+.x-grid3-td-topic .x-grid3-cell-inner {
+    white-space:normal;
+}
+.x-grid3-td-topic a {
+    color: #385F95;
+    text-decoration:none;
+}
+.x-grid3-td-topic a:hover {
+    text-decoration:underline;
+}
+.details .x-btn-text {
+    background-image: url(details.gif);
+}
+.x-resizable-pinned .x-resizable-handle-south{
+    background:url(../../resources/images/default/sizer/s-handle-dark.gif);
+    background-position: top;
+}
+
+.normalFont {
+	padding:2px;font-size:8pt; margin-left: 10px;
+}
+
+.required {
+	color: red;
+	font-weight: bold;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         id="org.deved.antlride.stringtemplate.nature"
+         name="%stNature"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="org.deved.antlride.stringtemplate.core.StringTemplateNature">
+         </run>
+      </runtime>
+   </extension>
+   <extension
+         point="org.eclipse.dltk.core.language">
+      <language
+            class="org.deved.antlride.stringtemplate.core.StringTemplateLanguageToolkit"
+            nature="org.deved.antlride.stringtemplate.nature"
+            priority="0">
+      </language>
+   </extension>
+   <extension
+         point="org.eclipse.dltk.core.sourceParsers">
+      <parserContribution
+            natureId="org.deved.antlride.stringtemplate.nature">
+         <parser
+               class="org.deved.antlride.stringtemplate.core.parser.StringTemplateSourceParserFactory"
+               description="StringTemplate Source Parser Factory"
+               id="org.deved.antlride.stringtemplate.core.stringTemplateSPF"
+               name="stringTemplateSPF"
+               priority="0">
+         </parser>
+      </parserContribution>
+   </extension>
+   <extension
+         point="org.eclipse.dltk.core.sourceElementParsers">
+      <parser
+            class="org.deved.antlride.stringtemplate.core.parser.StringTemplateSourceElementParser"
+            nature="org.deved.antlride.stringtemplate.nature">
+      </parser>
+   </extension>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+      <content-type
+            base-type="org.eclipse.core.runtime.text"
+            describer="org.deved.antlride.stringtemplate.internal.core.StringTemplateContentDescriber"
+            file-extensions="st,stg"
+            id="org.deved.antlride.stringtemplate.contentType"
+            name="%stContentType"
+            priority="high">
+      </content-type>
+   </extension>
+
+</plugin>

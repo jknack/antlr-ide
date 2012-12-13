@@ -1,0 +1,43 @@
+/*******************************************************************************
+ * Copyright (c) 2007, 2008 Edgar Espina.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ 
+ *******************************************************************************/
+
+package org.deved.antlride.core.env;
+
+import org.eclipse.core.runtime.IPath;
+import org.eclipse.core.runtime.Path;
+
+class DefaultJavaEnvironment implements JavaEnvironment {
+
+	private IPath javaHomePath;
+	
+	private IPath javaPath;
+	
+	private IPath javacPath;
+
+	public DefaultJavaEnvironment() {
+		String javaHome = System.getProperty("java.home");
+		javaHomePath = new Path(javaHome);
+		javaPath = javaHomePath.append("bin").append("java");
+		javacPath = javaHomePath.append("bin").append("javac");
+	}
+
+	public IPath getJavaHomePath() {
+		return javaHomePath;
+	}
+
+	public IPath getJavaPath() {
+		return javaPath;
+	}
+
+	public IPath getJavacPath() {
+		return javacPath;
+	}
+
+}

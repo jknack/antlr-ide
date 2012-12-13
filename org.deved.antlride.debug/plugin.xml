@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="org.deved.antlride.debug.AntlrDebugPreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.debug.core.breakpoints">
+      <breakpoint
+            class="org.deved.antlride.debug.breakpoints.AntlrLocationBreakpoint"
+            name="ANTLR Location Breakpoints"
+            markerType="org.deved.antlride.debug.locationBreakpoint"
+            id="locationBreakpoint"/>
+      <breakpoint
+           class="org.deved.antlride.debug.breakpoints.AntlrConsumeTokenBreakpoint"
+           name="ANTLR Consume Token Breakpoints"
+           id="consumeTokenBreakpoint"
+           markerType="org.deved.antlride.debug.consumeTokenBreakpoint">
+     </breakpoint>
+     <breakpoint
+           class="org.deved.antlride.debug.breakpoints.AntlrLTBreakpoint"
+           name="ANTLR LT Breakpoints"
+           id="LTBreakpoint"
+           markerType="org.deved.antlride.debug.LTBreakpoint">
+     </breakpoint>
+   </extension>
+   <extension
+         id="org.deved.antlride.debug.locationBreakpoint"
+         name="ANTLR Location Breakpoint Marker"
+         point="org.eclipse.core.resources.markers">
+      <super type="org.eclipse.debug.core.breakpointMarker"/>
+      <persistent value="true"/>
+   </extension>
+   <extension
+         id="org.deved.antlride.debug.consumeTokenBreakpoint"
+         name="ANTLR Consume Token Breakpoint Marker"
+         point="org.eclipse.core.resources.markers">
+      <super type="org.eclipse.debug.core.breakpointMarker"/>
+      <persistent value="true"/>
+   </extension>
+   <extension
+         id="org.deved.antlride.debug.LTBreakpoint"
+         name="ANTLR LT Breakpoint Marker"
+         point="org.eclipse.core.resources.markers">
+      <super type="org.eclipse.debug.core.breakpointMarker"/>
+      <persistent value="true"/>
+   </extension>
+</plugin>

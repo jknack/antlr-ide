@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Combined grammars</title>
+<link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+</head>
+
+<body>
+<h1>Working with combined grammars</h1>
+<p>Note: when you work with composite grammars all the grammars files must be in the same folder</p>
+<li>Select the menu item <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>ANTLR
+IDE</strong>&gt;<strong>Lexer Grammar</strong> to open the <strong>Lexer
+Grammar</strong> dialog wizard</li>
+<li>In the <strong>Name</strong> field type Ldep</li>
+<li>Select the <strong>Dependent</strong> option</li>
+<p><img alt="Lexer grammar"
+	src="../../images/lexerdependentgrammar.png"></p>
+<li>Click finish</li>
+<li>Note that if you save your grammar the build and code
+generation process is not triggered</li>
+<li>Select the menu item <strong>File</strong>&gt;<strong>New</strong>&gt;<strong>ANTLR
+IDE</strong>&gt;<strong>Combined Grammar</strong> to open the <strong>Combined
+Grammar</strong> dialog wizard</li>
+<li>In the <strong>Name</strong> field type CompositeG. Click
+finish</li>
+<li>Add the import statement: "import Ldep;"</li>
+<p><img alt="Composite grammar" src="../../images/compositeg.png"></p>
+<li>Save your grammar</li>
+<li>Now, if you save the "Ldep" grammar, the build and code generation process is executed</li>
+</body>
+</html>

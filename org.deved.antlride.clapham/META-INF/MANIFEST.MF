@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ANTLR IDE- Clapham
+Bundle-SymbolicName: org.deved.antlride.clapham;singleton:=true
+Bundle-Version: 0.1.004.qualifier
+Bundle-Activator: org.deved.antlride.railroad.Activator
+Bundle-Vendor: Edgar Espina
+Require-Bundle: org.deved.antlride.core,
+ org.deved.antlride.ui,
+ org.deved.antlride.antlr,
+ org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.draw2d
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
+Export-Package: org.deved.antlride.railroad
+Bundle-ClassPath: .,
+ lib/clapham.jar

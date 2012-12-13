@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Define an ANTLR package</title>
+<link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+</head>
+
+<body>
+<h1>Define an ANTLR package</h1>
+<p>In this section, you will learn how to create an ANTLR package.</p>
+<p>You can define as many different ANTLR packages as you like.
+ANTLR packages are used to build, run and debug grammars. Your ANTLR
+packages are managed on the <strong>Window>Preferences>ANTLR>Builder</strong>
+preference page</p>
+<p>An ANTLR package consist of:</p>
+<ul>
+	<li>A home directory (the location on disk). ANTLR IDE searches
+	for the <strong>lib</strong> directory in the home directory</li>
+	<li>A version</li>
+	<li>A description (version name, build date, etc.)</li>
+	<li>A set of jars files (antlr-2.7.x, stringtemplate-3.x,
+	antlr-3.x, antlr-runtime-3.x)</li>
+</ul>
+<p>You can switch the default ANTLR package for the workbench. The
+default ANTLR package is used by default when building, running, and
+debugging grammars. Alternatively, projects may specify a specific an
+ANTLR package that they should be built and run with.</p>
+<h2>Create a new ANTLR package</h2>
+<ol>
+	<li>Go to <a href="http://antlr.org/download.html">ANTLR site</a>
+	and get the source distribution</li>
+	<li>Extract the file to disk, for example: /home/edgar/antlr-3.1.3</li>
+	<li>Go to <strong>Window > Preferences > ANTLR > Builder
+	</strong></li>
+	<p><img src="../../images/antlrpackages.png" alt="ANTLR Package" /></p>
+	<li>Select the <strong>Add</strong> button</li>
+	<p><img src="../../images/antlrpackagewindow.png"
+		alt="ANTLR Package" /></p>
+	<li>Select the <strong>Directory</strong> button and select the
+	"/home/edgar/antlr-3.1.3" directory</li>
+	<p><img src="../../images/antlrpackagecreated.png"
+		alt="ANTLR Package" /></p>
+	<p>Note: The <strong>Add External JARS...</strong> button is used
+	for add <strong>Custom Targets</strong></p>
+	<li>Press the <strong>OK</strong> button</li>
+	<p><img src="../../images/antlrpackagedefined.png"
+		alt="ANTLR Package" /></p>
+	<li>Press the <strong>OK</strong> button</li>
+</ol>
+<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=213306&amp;type=2" width="125" height="37" border="0" alt="SourceForge.net Logo" /></a>
+</body>
+</html>

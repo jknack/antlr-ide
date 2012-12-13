@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.deved.antlride.feature"
+      label="%featureName"
+      version="2.1.2.qualifier"
+      provider-name="%providerName"
+      plugin="org.deved.antlride.core">
+
+   <description url="http://antlrv3ide.sourceforge.net">
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="%updateSiteName" url="http://antlrv3ide.sourceforge.net/updates/"/>
+      <discovery label="%updateSiteName" url="http://antlrv3ide.sourceforge.net/updates"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.dltk.core" version="3.0.0" match="compatible"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.variables"/>
+      <import plugin="org.eclipse.debug.core"/>
+      <import plugin="org.eclipse.dltk.debug" version="3.0.0" match="compatible"/>
+      <import plugin="org.eclipse.dltk.ui" version="3.0.0" match="compatible"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.debug.ui"/>
+      <import plugin="org.eclipse.ui.console"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+      <import plugin="org.eclipse.dltk.debug.ui" version="3.0.0" match="compatible"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor"/>
+      <import plugin="org.eclipse.search"/>
+      <import plugin="org.eclipse.gef" version="3.7.0" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="org.deved.antlride.core"
+         download-size="260"
+         install-size="260"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.deved.antlride.debug"
+         download-size="60"
+         install-size="60"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.deved.antlride.common.ui"
+         download-size="362"
+         install-size="362"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.deved.antlride.debug.ui"
+         download-size="36"
+         install-size="36"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.deved.antlride.help"
+         download-size="4000"
+         install-size="4000"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.deved.antlride.ui"
+         download-size="299"
+         install-size="299"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.deved.antlride.formatter"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.deved.antlride.antlr"
+         download-size="1772"
+         install-size="1882"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

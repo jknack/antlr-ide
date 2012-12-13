@@ -1,0 +1,40 @@
+/**
+A simpleC unit test
+*/
+gunit SimpleC;
+
+@header {
+ //.....
+}
+
+//test rule:variable with 2 tests
+variable:
+"int x" FAIL
+
+"int x;" -> "x"
+
+//test rule:functionHeader with 1 test
+functionHeader:
+"void bar(int x)" returns ["int"]
+
+//test rule:program with 3 tests, input starts immediately after the initial << so the first test is a blank line
+program:
+<<
+char c;
+int x;
+>> OK
+
+input OK
+
+input -> ""
+
+
+// test lexical rules
+ID:
+"abc123" OK
+"XYZ@999" OK
+"123abc" FAIL
+
+INT:
+"00000" OK
+"123456789" OK

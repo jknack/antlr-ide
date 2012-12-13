@@ -1,0 +1,18 @@
+grammar WhiteSpace;
+
+options {
+  output=AST;
+  ASTLabelType=CommonTree;
+}
+
+tokens {
+  DOC_COMMENT = 'doc';
+}
+
+wsRule
+options {
+    memoize=true;
+}
+    : (var='assign' | var+='plusAssign')  (block) ? ->
+      ^(block)
+    ;       

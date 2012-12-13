@@ -1,0 +1,17 @@
+body {
+	margin-top: 4px;
+}
+
+body {
+	background: #FFFFFF none repeat scroll 0 0;
+	font-size: 83%;
+	margin-bottom: 1em;	
+}
+
+body,h1,h2,h3,h4,h5,h6,p,table,td,caption,th,ul,ol,dl,li,dd,dt {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html {
+	border: 0 none;
+}
